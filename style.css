@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Caprasimo&family=DM+Serif+Display:ital@0;1&family=Delius+Swash+Caps&family=Delius+Unicase:wght@400;700&family=DynaPuff:wght@400..700&family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&family=Sriracha&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.hbdHead {
+    /* display: flex;
+  justify-content: center;  */
+    text-align: center;
+    background-color: burlywood;
+}
+
+.topCover {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    background-color: red;
+    visibility: hidden;
+}
+
+body {
+    background-image: url("img/bg.jpg")
+}
+
+.main {
+    background-color: rgba(255, 255, 255, 0.63);
+    max-width: 1300px;
+    margin: auto;
+    border-radius: 1cap;
+
+
+}
+
+.hbdHead {
+    max-width: 1000px;
+    margin: auto;
+    border-style: solid;
+    border-radius: 5cap;
+    border-width: 0.5cap;
+    border-color: rgb(148, 115, 65);
+
+
+
+}
+
+.firstHead {
+    text-align: left;
+    /* margin: auto; */
+    padding-left: 100px;
+
+}
+
+.secondHead {
+    text-align: right;
+    /* margin: auto; */
+    padding-right: 100px;
+}
+
+.img {
+    margin: auto;
+    text-align: center;
+}
+
+.describe {
+    text-align: center;
+}
+
+h1 {
+    font-family: "Delius Unicase", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    word-spacing: 1cap;
+    letter-spacing: 0.5cap;
+    font-size: 50px;
+    color: rgb(59, 47, 30);
+
+}
+
+h4 {
+    font-family: "Edu VIC WA NT Hand Pre", cursive;
+    font-optical-sizing: auto;
+    font-weight: 10000;
+    font-style: normal;
+    word-spacing: 0.5cap;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+
+}
+
+h2,
+h3 {
+    font-family: "Edu VIC WA NT Hand Pre", cursive;
+    font-optical-sizing: auto;
+    font-weight: 10000;
+    font-style: italic;
+    word-spacing: 0.5cap;
+    color: rgb(59, 47, 30);
+}
+
+.hint {
+    font-family: "Edu VIC WA NT Hand Pre", cursive;
+    font-optical-sizing: auto;
+    font-weight: 10000;
+    font-style: normal;
+    word-spacing: 0.5cap;
+    color: rgb(59, 47, 30);
+}
+
+
+
+.herPicture {
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ccc;
+    width: 300px;
+    height: auto;
+}
+
+.line {
+    height: 2px;
+    background-color: rgb(148, 115, 65);
+    width: 30%;
+    margin: 20px auto;
+
+}
+
+.cardCover {
+    background-image: url("img/paperTexture2.jpg");
+    width: 500px;
+    height: 700px;
+    border-style: solid;
+    border-width: 2px;
+    margin: 0 auto;
+    border-color: rgba(163, 139, 110, 0.281);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* center horizontally */
+    align-items: center;
+    /* center vertically */
+    /* background-color: bisque; */
+
+}
+
+.deco3 {
+    text-align: center;
+}
+
+.herPicture2 {
+    /* margin: auto; */
+    position: absolute;
+    left: 100px;
+    bottom: 130px;
+    border-style: solid;
+    border-radius: 10%;
+    border-color: rgba(0, 0, 0, 0.219);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: rotate(-10deg);
+    /* เอียงซ้าย 10 องศา */
+    transition: transform 0.3s ease;
+}
+
+.herPicture2:hover {
+    transform: rotate(0deg);
+}
+
+.name {
+    position: absolute;
+    right: 100px;
+    bottom: 120px;
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+}
+
+.text {
+    position: absolute;
+    top: 130px;
+    text-align: justify;
+    width: 400px;
+    font-size: large;
+
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-indent: 3em;
+    /* text-decoration: underline; */
+
+}
+
+.topHead {
+    position: absolute;
+    left: 70px;
+    top: 50px;
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+
+}
+
+.cake {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+
+}
+
+.cake:active {
+    transform: scale(0.95);
+}
+
+.rotate-left-right {
+    animation: rotate 3s ease-in-out infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(-10deg);
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+
+    75% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+
+.falling-object {
+    position: fixed;
+    top: -50px;
+    border-radius: 50%;
+    opacity: 0.9;
+    animation-name: fall;
+    animation-timing-function: linear;
+
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(110vh);
+        opacity: 0.6;
+    }
+}
+
+.canDance {
+    /* display: block; */
+    padding-right: 30px;
+}
+
+strong {
+    font-style: italic;
+    font-family: "Delius Swash Caps", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    /* text-decoration: underline;
+    text-decoration-thickness: 4px; */
+    
+    
+}
+
+.herName {
+    background-color: #ffffff98;
+    border-radius: 30px;
+    padding: 20px;
+    color: rgb(175, 23, 23);
+    display: inline-block;
+    border-style: solid;
+    border-width: 5px;
+}
+
+
+.main2 {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    width: 1300px;
+
+
+}
+
+.flower {
+    position: absolute;
+    left: 20cap;
+    top: 15cap;
+
+}
+
+.sun {
+    position: absolute;
+    right: 80px;
+    bottom: 220px;
+
+}
+
+.star {
+    position: absolute;
+    right: 20cap;
+    top: 20cap;
+
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(-8deg);
+    }
+
+    40% {
+        transform: rotate(8deg);
+    }
+
+    60% {
+        transform: rotate(-6deg);
+    }
+
+    80% {
+        transform: rotate(6deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.swing {
+    animation: swing 1s ease-in-out;
+}
+
+.reactive {
+    cursor: pointer;
+}
+.animal1,.animal2,.animal3,.animal4{
+    display: inline-block;
+}
